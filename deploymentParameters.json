@@ -17,7 +17,7 @@
                     "id": "/subscriptions/fc8171ee-10a5-4635-8fd1-0c45800663f1/resourceGroups/tailspin-spacegame-web-rg/providers/Microsoft.KeyVault/vaults/tailspin-vault-5177"
                 },
                 "secretName": "adminPassword"
-            },
+            }
         },
         "firstRun": {
             "reference": {
@@ -25,7 +25,7 @@
                     "id": "/subscriptions/fc8171ee-10a5-4635-8fd1-0c45800663f1/resourceGroups/tailspin-spacegame-web-rg/providers/Microsoft.KeyVault/vaults/tailspin-vault-5177"
                 },
                 "secretName": "firstRun"
-            },
+            }
         }
     }
 }
