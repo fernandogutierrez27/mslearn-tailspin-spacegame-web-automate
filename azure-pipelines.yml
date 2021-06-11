@@ -107,8 +107,8 @@ stages:
     - task: AzureResourceManagerTemplateDeployment@3
       inputs:
         deploymentScope: 'Resource Group'
-        ConnectedServiceName: 'Resource Manager - Tailspin - Space Game'
-        subscriptionName: $(subscription)
+        azureResourceManagerConnection: 'Resource Manager - Tailspin - Space Game'
+        subscriptionId: '$(subscription)'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'tailspin-spacegame-web-rg'
         location: '$(location)'
@@ -116,7 +116,7 @@ stages:
         csmFile: 'template.json'
         csmParametersFile: 'deploymentParameters.json'
         deploymentMode: 'Incremental'
-        deploymentOutputs: ResourceGroupDeploymentOutputs
+        deploymentOutputs: 'ResourceGroupDeploymentOutputs'
 
 - stage: DBAVerificationScript
   displayName: 'Script database schema changes'
